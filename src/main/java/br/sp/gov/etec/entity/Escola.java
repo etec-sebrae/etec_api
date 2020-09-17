@@ -78,4 +78,9 @@ public class Escola {
 		this.status = status;
 	}
 
+	@Override
+	public String toString() {
+		return "Escola [id=" + id + ", nome=" + nome + ", email=" + email + ", codigo=" + codigo + ", status=" + status
+				+ "]";
+	}	
 }

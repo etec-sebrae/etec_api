@@ -11,8 +11,8 @@ public class EscolaDto implements Serializable {
 	private String nome;
 	private String email;
 	private String codigo;
-	private int status;
-	
+	private int status;	
+
 	public String getNome() {
 		return nome;
 	}
