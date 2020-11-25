@@ -61,6 +61,5 @@ public class EscolaController {
 		msg.setMsg(escola.toString());
 		return  ResponseEntity.status(HttpStatus.OK).body(msg);
 	}
-	//delete escola
-
+	
 }

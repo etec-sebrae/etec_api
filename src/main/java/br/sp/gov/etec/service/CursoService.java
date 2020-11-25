@@ -10,8 +10,7 @@ import br.sp.gov.etec.entity.Curso;
 import br.sp.gov.etec.repository.CursoRepository;
 
 @Service
-public class CursoService {
-	
+public class CursoService {	
 
 	@Autowired
 	CursoRepository repository;
@@ -26,4 +25,17 @@ public class CursoService {
 		return cursos;		
 	}
 	
+	public Curso procurarPorIdCurso(long id){		
+		Curso curso = repository.findById(id);		
+		return curso;			
+	}
+	
+	public void deletarCurso(Curso curso) {
+		repository.delete(curso);
+	}
+	
+	public Curso atualizarEscola(Curso curso) {		
+		Curso retorno = repository.save(curso);	
+		return retorno;		
+	}
 }

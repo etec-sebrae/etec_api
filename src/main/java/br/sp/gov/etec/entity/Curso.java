@@ -78,4 +78,11 @@ public class Curso {
 		this.codigo = codigo;
 	}
 
+	@Override
+	public String toString() {
+		return "Curso [id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", status=" + status + ", codigo="
+				+ codigo + "]";
+	}
+
+	
 }
